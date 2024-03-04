@@ -1,4 +1,5 @@
 import "./Nav.scss";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 function Nav({ search, setSearch }) {
   function handleChange() {}
@@ -6,7 +7,9 @@ function Nav({ search, setSearch }) {
   return (
     <div className="nav">
       <ul className="nav_links">
-        <li>L/D</li>
+        <li>
+          <MdOutlineDarkMode className="dark_mode" />
+        </li>
         <li className="nav_link">
           <a>Home</a>
         </li>
