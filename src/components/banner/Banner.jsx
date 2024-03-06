@@ -51,6 +51,7 @@ function Banner() {
               seats={car.Seats}
               price={car.PriceGBP}
               speed={car.TopSpeed_MpH}
+              img={car.path}
             />
           );
         })}
