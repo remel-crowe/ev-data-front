@@ -1,0 +1,15 @@
+.vehicle_modal{
+    position: fixed;
+    background-color: rgb(230, 230, 230);
+    min-height: 1000px;
+    min-width: 800px;
+    left: 50%;
+    top: 17%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+
+
+.hidden{
+    display: none;
+}

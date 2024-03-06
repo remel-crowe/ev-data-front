@@ -11,6 +11,12 @@
     position: relative;
     margin-bottom: 2rem;
     
+    &> img {
+        object-fit: contain;
+        width: 200px;
+        padding-top: 30px;
+        height: 210px;
+    }
 }
 
 .nav_links {
@@ -21,6 +27,7 @@
     .nav_link{
         font-size: large;
         font-weight: 500;
+        cursor: pointer;
     }
 }
 

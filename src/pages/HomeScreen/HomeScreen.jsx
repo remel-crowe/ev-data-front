@@ -6,7 +6,7 @@ import Banner from "../../components/banner/Banner";
 function HomeScreen() {
   const [search, setSearch] = useState("");
   return (
-    <div>
+    <div className="HomeScreen">
       <Nav search={search} setSearch={setSearch} />
       <Banner />
     </div>

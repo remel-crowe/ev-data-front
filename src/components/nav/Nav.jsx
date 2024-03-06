@@ -1,5 +1,5 @@
 import "./Nav.scss";
-import { MdOutlineDarkMode } from "react-icons/md";
+import { FaBoltLightning } from "react-icons/fa6";
 
 function Nav({ search, setSearch }) {
   function handleChange() {}
@@ -8,11 +8,9 @@ function Nav({ search, setSearch }) {
     <div className="nav">
       <ul className="nav_links">
         <li>
-          <MdOutlineDarkMode className="dark_mode" />
+          <FaBoltLightning className="dark_mode" />
         </li>
-        <li className="nav_link">
-          <a>Home</a>
-        </li>
+
         <li className="nav_link">
           <a>About</a>
         </li>
@@ -20,6 +18,10 @@ function Nav({ search, setSearch }) {
           <a>All Cars</a>
         </li>
       </ul>
+      <img
+        src="/Black Minimalist Electrical Energy Logo.png"
+        alt="comapny logo"
+      ></img>
       <input
         type="text"
         className="nav_search"

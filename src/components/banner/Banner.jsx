@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Banner.scss";
-import LargeCard from "../largeCard/LargeCard";
+import VehicleModal from "../vehicleModal/VehicleModal";
+import VehicleCard from "../vehicleCard/VehicleCard";
 
 function Banner() {
   useEffect(() => {
@@ -43,7 +44,7 @@ function Banner() {
       <div className="car_container">
         {cars.map((car) => {
           return (
-            <LargeCard
+            <VehicleCard
               key={car._id}
               make={car.Brand}
               model={car.Model}
@@ -56,6 +57,7 @@ function Banner() {
           );
         })}
       </div>
+      <VehicleModal />
     </div>
   );
 }

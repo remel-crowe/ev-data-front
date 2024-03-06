@@ -1,4 +1,4 @@
-.LargeCard {
+.VehicleCard {
     box-shadow: 0 0 10px rgba(28, 28, 28, 0.17);
     display: flex;
     flex-direction: column;
@@ -11,9 +11,9 @@
     background-color: rgba(222, 222, 222, 0.19);
     &:hover {
         transform: scale(1.03);
-        border: 2px solid blue;
+        border: 2px solid rgb(36, 146, 255);
         cursor: pointer;
-        box-shadow: 0 0 10px blue;
+        box-shadow: 0 0 10px rgb(50, 166, 255);
     }
 }
 
@@ -36,7 +36,11 @@
 
 .large_specs{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
+}
+
+.range_container, .speed_container, .price_container {
+    font-size: 20px
 }

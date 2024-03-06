@@ -1,12 +1,12 @@
 .banner{
    display: flex;
    flex-direction: column;
+   z-index: 2;
 }
 
 .sort_container {
     width: 100%;
     padding-right: 30px;
-    
 }
 
 .sort_select {
@@ -19,7 +19,6 @@
     border-radius: 2px;
     border: none;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-
     &> option {
         font-family: 'Manrope';
     }
@@ -31,6 +30,6 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
     padding: 10px 30px;
-
+    overflow-y: scroll;
 }
 
