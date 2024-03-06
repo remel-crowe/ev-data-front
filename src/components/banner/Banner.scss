@@ -1,7 +1,36 @@
 .banner{
+   display: flex;
+   flex-direction: column;
+}
+
+.sort_container {
+    width: 100%;
+    padding-right: 30px;
+    
+}
+
+.sort_select {
+    position: relative;
+    float: right;
+    font-family: 'Manrope';
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+    &> option {
+        font-family: 'Manrope';
+    }
+ }
+
+
+.car_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
     padding: 10px 30px;
+
 }
 

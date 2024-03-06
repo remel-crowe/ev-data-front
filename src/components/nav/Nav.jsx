@@ -25,6 +25,7 @@ function Nav({ search, setSearch }) {
         className="nav_search"
         placeholder="Search by Model or Car"
         value={search}
+        onChange={setSearch}
       />
     </div>
   );

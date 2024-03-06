@@ -1,7 +1,7 @@
 import React from "react";
 import "./LargeCard.scss";
 
-function LargeCard({ make, model, range, seats, speed, pos }) {
+function LargeCard({ make, model, range, seats, speed, price }) {
   return (
     <div className="LargeCard">
       <p className="large_title">{model}</p>
@@ -11,9 +11,9 @@ function LargeCard({ make, model, range, seats, speed, pos }) {
       ></img>
 
       <ul className="large_specs">
-        <li>range:{range}Mi</li>
-        <li>speed:{speed}Mph</li>
-        <li>seats:{seats}</li>
+        <li>Range:{range}Mi</li>
+        <li>Speed:{speed}Mph</li>
+        <li>Price: ~£{price}</li>
       </ul>
     </div>
   );
