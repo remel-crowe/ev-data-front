@@ -1,15 +1,24 @@
 .vehicle_modal{
     position: fixed;
-    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: rgb(199, 204, 199);
     min-height: 1000px;
     min-width: 800px;
     left: 50%;
     top: 17%;
     transform: translate(-50%);
     border-radius: 10px;
+    font-family: 'Manrope';
 }
 
+.picture {
 
-.hidden{
-    display: none;
+    & > img {
+        object-fit: contain;
+        height: 45vh;
+    }
 }
+

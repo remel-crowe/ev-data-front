@@ -2,9 +2,18 @@ import "./VehicleCard.scss";
 import { GiPathDistance, GiSpeedometer } from "react-icons/gi";
 import { TbCurrencyPound } from "react-icons/tb";
 
-function VehicleCard({ make, model, range, seats, speed, price, img }) {
+function VehicleCard({
+  make,
+  model,
+  range,
+  seats,
+  speed,
+  price,
+  img,
+  onclick,
+}) {
   return (
-    <div className="VehicleCard">
+    <div className="VehicleCard" onClick={onclick}>
       <p>{make}</p>
       <p className="large_title">{model}</p>
       <img className="large_image" src={`/Car-Models${img}.jpeg`}></img>

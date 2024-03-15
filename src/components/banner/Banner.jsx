@@ -5,6 +5,9 @@ import VehicleModal from "../vehicleModal/VehicleModal";
 import VehicleCard from "../vehicleCard/VehicleCard";
 
 function Banner() {
+  const [show, setShow] = useState(false);
+  const [currentCar, setCurrentCar] = useState({});
+
   useEffect(() => {
     axios
       .get("http://localhost:3000/cars")
@@ -31,6 +34,10 @@ function Banner() {
     setCars(currentCars);
   }
 
+  function findCar(id) {
+    return cars.find((car) => car._id === id);
+  }
+
   return (
     <div className="banner">
       <div className="sort_container">
@@ -53,11 +60,18 @@ function Banner() {
               price={car.PriceGBP}
               speed={car.TopSpeed_MpH}
               img={car.path}
+              onclick={() => {
+                let modalCar = findCar(car._id);
+                if (modalCar) {
+                  setCurrentCar(modalCar);
+                  setShow(true);
+                }
+              }}
             />
           );
         })}
       </div>
-      <VehicleModal />
+      {show && <VehicleModal vehicle={currentCar} setShow={setShow} />}
     </div>
   );
 }
