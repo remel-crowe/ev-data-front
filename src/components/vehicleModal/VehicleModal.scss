@@ -1,9 +1,9 @@
+
 .vehicle_modal{
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
     background-color: rgb(199, 204, 199);
     min-height: 1000px;
     min-width: 800px;
@@ -14,11 +14,45 @@
     font-family: 'Manrope';
 }
 
-.picture {
 
-    & > img {
-        object-fit: contain;
-        height: 45vh;
-    }
+.vehicle_model{
+
 }
 
+.vehicle_brand{
+    margin-top:30px;
+}
+
+.car_image{
+        position: relative;
+        object-fit: fill;
+        width: 60%;
+        overflow: hidden;
+    }
+
+ .car_banner{
+    position: relative;
+    width: 100%;
+    padding: 0 5rem;
+    top: -6.5rem
+    }
+
+.banner_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_bottom{
+    margin-top: 1.5rem;
+}
+
+
+.vehicle_stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+   
+    gap: 1rem;
+    width: 100%;
+    padding: 0 5rem;
+}
