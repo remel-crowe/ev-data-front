@@ -15,7 +15,9 @@ function VehicleCard({
   return (
     <div className="VehicleCard" onClick={onclick}>
       <p>{make}</p>
-      <p className="large_title">{model}</p>
+      <p className="large_title">
+        {model.charAt(0).toUpperCase() + model.slice(1)}
+      </p>
       <img className="large_image" src={`/Car-Models${img}.jpeg`}></img>
       <div className="large_specs">
         <div className="range_container">

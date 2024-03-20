@@ -2,15 +2,12 @@ import "./Nav.scss";
 import { FaBoltLightning } from "react-icons/fa6";
 
 function Nav({ search, setSearch }) {
-  function handleChange() {}
-
   return (
     <div className="nav">
       <ul className="nav_links">
         <li>
           <FaBoltLightning className="dark_mode" />
         </li>
-
         <li className="nav_link">
           <a>About</a>
         </li>
@@ -27,7 +24,9 @@ function Nav({ search, setSearch }) {
         className="nav_search"
         placeholder="Search by Model or Car"
         value={search}
-        onChange={setSearch}
+        onChange={(e) => {
+          setSearch(e.target.value);
+        }}
       />
     </div>
   );

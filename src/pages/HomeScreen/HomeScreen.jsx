@@ -8,7 +8,7 @@ function HomeScreen() {
   return (
     <div className="HomeScreen">
       <Nav search={search} setSearch={setSearch} />
-      <Banner />
+      <Banner search={search} />
     </div>
   );
 }
