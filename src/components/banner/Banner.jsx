@@ -7,6 +7,8 @@ import VehicleCard from "../vehicleCard/VehicleCard";
 function Banner() {
   const [show, setShow] = useState(false);
   const [currentCar, setCurrentCar] = useState({});
+  const [cars, setCars] = useState([]);
+  const [sort, setSort] = useState("default");
 
   useEffect(() => {
     axios
@@ -16,8 +18,6 @@ function Banner() {
         console.log(err.message);
       });
   }, []);
-  const [cars, setCars] = useState([]);
-  const [sort, setSort] = useState("default");
 
   useEffect(() => {
     sortCars(sort);
